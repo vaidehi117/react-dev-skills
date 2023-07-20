@@ -16,11 +16,11 @@ function App() {
   const skillListItem = skillObject.map((skillObj,index) => {
     return <SkillListItem  skillName = {skillObj} key={index} />
   });
-  // console.log(skillListItem)
+  console.log(skillListItem)
   // console.log(skillObject)
 
   function addSkill(skillFromTheFrom) {
-    // console.log(skillFromTheFrom, 'skill form the form');
+    console.log(skillFromTheFrom, 'skill form the form');
     //when the user hit the form addSkill button 
     setSkillObject([
       ...skillObject,

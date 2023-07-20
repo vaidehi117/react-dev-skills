@@ -32,11 +32,12 @@ export default function NewSkillForm({addSkill}) {
         }
 
         addSkill(skill);
+        // everything was good make sure you clear any previous errorMessages
         setErrorMessage('');
         //clear out the form 
         setSkill({
-            level: '',
             name: '',
+            level:'3'
         })
         console.log(skill)
     }
