@@ -1,10 +1,10 @@
 import "./SkillListItem.css";
 
-const SkillListItem = ({ skill }) => {
+const SkillListItem = ({ skillName }) => {
     return (
     <div className="SkillListItem">
-        <div className="SkillListItem">{skill.name}</div>
-        <div className="SkillListItem">{`Level: ${skill.level}`}</div>
+        <div className="SkillListItem">{skillName.name}</div>
+        <div className="SkillListItem">{`Level: ${skillName.level}`}</div>
     </div>
     );
   };

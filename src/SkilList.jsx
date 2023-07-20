@@ -1,13 +1,10 @@
 import SkillListItem from './SkillListItem';
 
-const SkillList = ({ skills }) => {
-  return (
-    <ul>
-      {skills.map((skill, index) => (
-        <SkillListItem key={index} skill={skill} />
-      ))}
-    </ul>
-  );
-};
+export default function SkillList({ skills }) {
 
-export default SkillList;
+  // const skillListItem = skillObj.map((skillObj,index) => <SkillListItem skill={skillObj} key={index} /> );
+  const skillListItems = skills.map((skillObj,index) => {
+    return <SkillListItem  skillName = {skillObj} key={index} />
+  });
+  return <ul>{skillListItems}</ul>
+}
